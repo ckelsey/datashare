@@ -113,7 +113,7 @@
 				var win = self.getWindow(self.getSelector(frame));
 
 				if(win){
-					win.postMessage(message, (origin || '*'));
+					win.postMessage(message, (origin || location.origin));
 				}
 			},
 
